@@ -1,6 +1,5 @@
 #!usr/bin/python2
 # encoding: utf-8
-a
 
 from multiprocessing.pool import ThreadPool
 import requests
