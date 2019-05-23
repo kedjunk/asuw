@@ -2,14 +2,13 @@
 # encoding: utf-8
 
 from multiprocessing.pool import ThreadPool
-import requests
 import re
 import sys
 
 ua = 'Mozilla/5.0 (Linux; Android 8.1.0; Redmi 6A Build/O11019) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 YaBrowser/18.10.2.119.00 Mobile Safari/537.36'
 
 def check(i):
-    s = requests.Session()
+    s = Session()
     html = s.get('https://appleid.apple.com/account#!&page=create',
               headers={
                   'User-agent': ua,
